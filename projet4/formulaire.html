@@ -7,36 +7,44 @@
     <link rel='stylesheet' href='main.css'>
 </head>
 <body bgcolor="lightblue">
+    <center>
     <h1>Inscription d'un nouveau membre</h1>
 <form>
-<label><b>Nom:</b></label> <input type="text" name="t1"> <br>
-<label><b>Prénom</b></label> <input type="text" name="t1"> <br><br>
-<label><b>Date de naissance</b></label> <input type="date" name="d1"> <br>
-<label><b>Age</b></label> <input type="number" name="a1"> <br><br>
-<label><b>Adresse mail</b></label> <input type="email" name="e1"> <br>
-<label><b>Mot de passe</b></label> <input type="password" name="p1"> <br><br>
-<label><b>Travaillez-vous</b></label>
-<select>
-    <option>Oui</option>
-    <option>Non</option>
-</select> <br>
-<label><b>Spécialité:</b></label>
-SLAM <input type="radio" name="r1">
-SISR <input type="radio" name="r2"> <br>
-<label><b>Hobbies:</b></label>
-Lecture<input type="checkbox" name="h1">
-Sport<input type="checkbox" name="h2">
-Musique<input type="checkbox" name="h3">
-Art<input type="checkbox" name="h4">
-Informatique<input type="checkbox" name="h5"><br><br>
-<label><b>Photo:</b></label>
-<input type="image" name="i1"> <br><br>
 
+<table border="0" width="50%" align="center">
+<tr><td><b>Nom:</b></td><td><input type="text" name="t1"></td></tr>
+<tr><td><b>Prénom:</b></td><td><input type="text" name="t2"></td></tr>
+<tr><td><b>Date de naissance</b></td><td><input type="date" name="d1"></td></tr>
+<tr><td><b>Age</b></td><td><input type="number" name="a1"></td></tr>
+<tr><td><b>Adresse mail</b></td><td><input type="email" name="e1"></td></tr>
+<tr><td><b>Mot de passe</b></td><td><input type="password" name="p1"></td></tr>
+<tr><td><b>Travaillez-vous</b></td><td>
+    <select name="travail">
+        <option>Oui</option>
+        <option>Non</option>
+    </select>
+</td></tr>
+<tr><td><b>Spécialité:</b></td><td>
+    SLAM <input type="radio" name="specialite" value="SLAM">
+    SISR <input type="radio" name="specialite" value="SISR">
+</td></tr>
+<tr><td><b>Hobbies:</b></td><td>
+    Lecture<input type="checkbox" name="h1">
+    Sport<input type="checkbox" name="h2">
+    Musique<input type="checkbox" name="h3">
+    Art<input type="checkbox" name="h4">
+    Informatique<input type="checkbox" name="h5">
+    Nourriture<input type="checkbox" name="h6">
 
-<input type="submit" value="Valider" name="s1">
-<input type="reset" value="Annuler" name="a1"
-
-
+</td></tr>
+<tr><td><b>Photo:</b></td><td><input type="image" name="i1" src="" alt="Photo"></td></tr>
+<tr><td><b>Commentaire:</b></td><td><textarea cols="20" rows="10" name="commentaire"></textarea></td></tr>
+<tr><td colspan="2" align="center">
+    <input type="submit" value="Valider" name="s1">
+    <input type="reset" value="Annuler" name="a2">
+</td></tr>
+</table>
+</center>
 </form>
 </body>
 </html>
